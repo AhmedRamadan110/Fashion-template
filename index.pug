@@ -1,0 +1,312 @@
+mixin information
+    ul.information
+        h5 Information
+            i(class="fas fa-chevron-down")
+        each info in ['About US', 'Delivery Information', 'Privacy Policy', 'Terms & Conditions', "Site Map"]
+            li: a(href="#")=info
+
+mixin extras
+    ul.extras
+        h5 Extras
+            i(class="fas fa-chevron-down")
+        each extra in ['Brands', 'Gift Certificates', 'Affiliate', 'Specials', 'Contact Us']
+            li: a(href="#")=extra
+doctype
+html(lang="en" dir="ltr")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Live demo for Adi Fashion OpenCart Template #97389
+        link(rel="stylesheet" href="css/owl.carousel.min.css")
+        link(rel="stylesheet" href="css/owl.theme.default.css")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/all.min.css")
+        link(rel="stylesheet", href="css/normalize.css")
+    body
+        //- Navbar
+        .navbar
+            .logo
+                img(src="images/logo.png")
+            ul.navlist
+                each val in ['Home', 'Men', 'Womens', 'Shop', 'Officer Wear', 'Products', 'Blogs']
+                    li: a(href='#')= val 
+            .icons
+                i(class="fas fa-search")
+                i(class="far fa-heart")
+                i(class="fas fa-shopping-cart")
+        //- Dropdown
+        .dropdown
+            i(class="fas fa-bars")
+
+        //- Header
+        .header
+            .slider
+                img(src='images/main-banner1-1920x650.jpg')
+                img(src='images/main-banner2-1920x650.jpg')
+            .prev-next
+                #prev
+                    i(class="fas fa-chevron-left")
+                #next
+                    i(class="fas fa-chevron-right")
+        //- Promo Boxes
+        .promo-boxes
+            .promo-box
+                i(class='fas fa-truck')
+                .promo-info
+                    h3 Free Shipping
+                    span Order Over $99
+            .promo-box
+                i(class='fas fa-undo')
+                .promo-info
+                    h3 Money back
+                    span 30 Days return
+            .promo-box
+                i(class='fas fa-prescription-bottle-alt')
+                .promo-info
+                    h3 24/7 Support
+                    span Dedicated Support
+        .line
+
+        //- Subbanner
+        .container
+            .subbanner 
+                div(class="subbanner-title mg-bottom")
+                    h1.title Shop By Brand
+                .subbanner-brands
+                    .brand
+                        img(src="images/sub-banner1.jpg")
+                        .subbanner-text
+                            a(href="#") Fashion
+                    .brand
+                        img(src="images/sub-banner2.jpg")
+                        .subbanner-text
+                            a(href="#") Accessories
+                    .brand
+                        img(src="images/sub-banner3.jpg")
+                        .subbanner-text
+                            a(href="#") Men
+
+        //- Products
+        .products
+            div(class="products-title mg-bottom")
+                h1.title Top Products
+            .container
+                div(class='owl-carousel owl-theme')
+                    .item
+                        img(src="images/1-255x348.jpg")
+                        .item-text
+                            a(href='#') ladies shirt
+                            h5 $110.00
+                            h5 $122.00
+                    .item
+                        img(src="images/11-255x348.jpg")
+                        .item-text
+                            a(href='#') tshirts
+                            h5 $122.00
+                    .item
+                        img(src="images/12-255x348.jpg")
+                        .item-text
+                            a(href='#') casual shirt
+                            h5 $122.00
+                    .item
+                        img(src="images/10-255x348.jpg")
+                        .item-text
+                            a(href='#') hoodies
+                            h5 $98.00
+                            h5 $122.00
+                    
+                    .item
+                        img(src="images/13-255x348.jpg")
+                        .item-text
+                            a(href='#') fancy top
+                            h5 $110.00
+                            h5 $122.00
+                    .item
+                        img(src="images/3-255x348.jpg")
+                        .item-text
+                            a(href='#') short slive tshirt
+                            h5 $122.00
+                    .item
+                        img(src="images/5-255x348.jpg")
+                        .item-text
+                            a(href='#') hoodie cap tshirt
+                            h5 $122.00
+                    .item
+                        img(src="images/7-255x348.jpg")
+                        .item-text
+                            a(href='#') down slive tshirt
+                            h5 $98.00
+                            h5 $122.00
+        //- parallex banner
+        .parallex-banner
+            .parallex-info
+                img(src='images/logo.png')
+                p
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
+
+                    |   It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, like Aldus PageMaker including versions of Lorem Ipsum.
+                button Shop Now
+        //- Latest Products
+        .products
+            .products-title
+                h1.title Latest
+            .container
+                div(class='owl-carousel owl-theme')
+                    .item
+                        img(src="images/3-255x348.jpg")
+                        .item-text
+                            a(href='#') short slive tshirt
+                            h5 $110.00
+                            h5 $122.00
+                    .item
+                        img(src="images/6-255x348.jpg")
+                        .item-text
+                            a(href='#') office wear
+                            h5 $122.00
+                    .item
+                        img(src="images/11-255x348.jpg")
+                        .item-text
+                            a(href='#') casual shirt
+                            h5 $122.00
+                    .item
+                        img(src="images/10-255x348.jpg")
+                        .item-text
+                            a(href='#') tshirt
+                            h5 $98.00
+                            h5 $122.00
+                    
+                    .item
+                        img(src="images/7-255x348.jpg")
+                        .item-text
+                            a(href='#') down slive tshirt
+                            h5 $110.00
+                            h5 $122.00
+                    .item
+                        img(src="images/3-255x348.jpg")
+                        .item-text
+                            a(href='#') short slive tshirt
+                            h5 $122.00
+                    .item
+                        img(src="images/5-255x348.jpg")
+                        .item-text
+                            a(href='#') hoodie cap tshirt
+                            h5 $122.00
+                    .item
+                        img(src="images/7-255x348.jpg")
+                        .item-text
+                            a(href='#') down slive tshirt
+                            h5 $98.00
+                            h5 $122.00
+        //- Our Customer Say
+        .our-ctm
+            div(class="our-ctm-title mg-bottom")
+                h1.title Our Customer Say
+            .ctm-image 
+                img(src="images/1-150x150.jpg")
+            .our-ctm-info 
+                q <i>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+                h5 - Rambo
+
+        //- Latest Post
+        .latest-post
+            .latest_post-title
+                h1.title Latest Post
+            .container
+                div(class="owl-carousel owl-theme")
+                    .item
+                        .single-card
+                            img(src="images/blog1-370x247.jpg" alt="Duis pulvinar augue nisi")
+                        .latest_post-info
+                            h4: a(href="#") Duis pulvinar augue nisi
+                            p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, dolores eos qui ratione voluptatem sequi nesciunt... 
+                            a(href="#") Read More
+                        .blog-group
+                            i(class="fas fa-comment"): span Comments
+                            i(class="fas fa-calendar"): span 13 Aug 2020
+                    .item
+                        .single-card
+                            img(src="images/blog2-370x247.jpg" alt="Lorem ipsum dolo")
+                        .latest_post-info
+                            h4: a(href="#") Lorem ipsum dolo
+                            p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, dolores eos qui ratione voluptatem sequi nesciunt... 
+                            a(href="#") Read More
+                        .blog-group
+                            i(class="fas fa-comment"): span Comments
+                            i(class="fas fa-calendar"): span 13 Aug 2020
+                    .item
+                        .single-card
+                            img(src="images/blog3-370x247.jpg" alt="consectetur adipiscing")
+                        .latest_post-info
+                            h4: a(href="#") consectetur adipiscing
+                            p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, dolores eos qui ratione voluptatem sequi nesciunt... 
+                            a(href="#") Read More
+                        .blog-group
+                            i(class="fas fa-comment"): span Comments
+                            i(class="fas fa-calendar"): span 13 Aug 2020
+                    .item
+                        .single-card
+                            img(src="images/blog4-370x247.jpg" alt="The standard Lorem Ipsum")
+                        .latest_post-info
+                            h4: a(href="#") The standard Lorem Ipsum
+                            p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, dolores eos qui ratione voluptatem sequi nesciunt... 
+                            a(href="#") Read More
+                        .blog-group
+                            i(class="fas fa-comment"): span Comments
+                            i(class="fas fa-calendar"): span 13 Aug 2020
+        //- Popup Image
+        .popup
+            img(id="image")
+            #popup_content
+
+        //- Our Partners
+        .our-partners
+            .our-partners-title
+                h1.title Our Partners
+            .icons
+                img(src="images/icons/01-170x70.jpg")
+                img(src="images/icons/02-170x70.jpg")
+                img(src="images/icons/03-170x70.jpg")
+                img(src="images/icons/04-170x70.jpg")
+                img(src="images/icons/05-170x70.jpg")
+                img(src="images/icons/06-170x70.jpg")
+        //- Footer Top
+        .footer-top
+            .footer-info
+                ul.contact-info
+                    h5 Contact info
+                        i(class="fas fa-chevron-down")
+                    li
+                        i(class="fas fa-location-arrow")
+                        | 71 Pennington Lane Vernon 
+                        | Rockville, <br> CT 06066
+                    li
+                        i(class="fas fa-phone")
+                        | 0123-456-789
+                    li
+                        i(class="fas fa-fax") 
+                        | 0123-456-789
+                    li
+                        i(class="fas fa-envelope")
+                        a(href="#") theme@demo.com
+                +information
+                +extras
+                .our-newsletter
+                    h5 Our newsletters
+                    p Sign up for our newsletter to get the latest news, announcements and special.
+                    input(type="email", name="email", placeholder="Enter Email Address" autocomplete="off")
+                    button Subscribe
+        //- Footer Bottom
+        .footer-btm
+            .container
+                .copyright
+                    h5 Powered By <a href="#">OpenCart</a> Your Store © 2020
+                .social-media
+                    a(href="https://www.facebook.com"): i(class="fab fa-facebook")
+                    a(href="https://www.twitter.com"): i(class="fab fa-twitter")
+                    a(href="https://www.plus.google.com"): i(class="fab fa-google-plus")
+                    a(href="https://www.youtube.com"): i(class="fab fa-youtube")
+                    a(href="https://www.pinterest.com"): i(class="fab fa-pinterest")
+    script(src="js/jquery-3.4.0.js")
+    script(src="http://localhost:35729/livereload.js")
+    script(src="js/owl.carousel.min.js")
+    script(src="js/$.js")

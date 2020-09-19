@@ -1,0 +1,128 @@
+// Products
+.products {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 80px 0;
+    .container {
+        position: relative;
+        &:hover {
+            .owl-nav {
+                opacity: 1;
+            }
+        }
+        .owl-nav {
+            opacity: 0;
+            transition: all .4s ease-in-out;
+            .owl-prev, .owl-next {
+                position: absolute;
+                top: 45%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(0,0,0, .4);
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 50%;
+                color: white;
+                outline: none;
+                &:hover {
+                    background-color: rgba(0,0,0, .6)
+                }
+            }
+            .owl-next {
+                right: -20px;
+            }
+            .owl-prev {
+                left: 30px;
+            }
+        }
+        .item {
+            .item-text {
+                clear: both;
+                a {
+                    color: $blackColor;
+                    display: block;
+                    margin: 8px 0;
+                    &:hover {
+                        color: $blueWhiteColor;
+                    }
+                }
+                h5 {
+                    color: $blueWhiteColor;
+                    display: inline-block;
+                    font-size: 17px;
+                }
+                h5:nth-of-type(2) {
+                    color: $greyColor;
+                    text-decoration: line-through;
+                }
+            }
+        }
+        .owl-dots {
+            display: none;
+        }
+    }
+}
+
+// Latest Post
+.latest-post {
+    padding: 80px 0;
+    .latest_post-title {
+        @extend .mg-bottom;
+    }
+    .item {
+        &:hover {
+            cursor: pointer;
+            .single-card {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+        .single-card {
+            position: relative;
+            &::before {
+               @include overlay;
+                background-color: rgba(0,0,0, .6);
+                opacity: 0;
+                transition: all .4s ease-in-out;
+            }
+        }
+        .latest_post-info {
+            margin: 15px 0;
+            h4 {
+                margin-bottom: 15px;
+                font-weight: normal;
+                a {
+                    color: $blackColor;
+                    font-size: 18px;
+                    &:hover {
+                        color: $blueWhiteColor;
+                    }
+                }
+            }
+            p {
+                line-height: 1.5;
+                color: $greyColor;
+                margin-bottom: 15px;
+            }
+            a {
+                color: $blackColor;
+                font-size: 14px;
+                &:hover {
+                    color: $blueWhiteColor;
+                }
+            }
+        }
+        .blog-group {
+            color: $blackColor;
+            i {
+                margin-right: 15px;
+            }
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
+}

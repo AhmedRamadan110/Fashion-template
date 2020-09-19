@@ -1,0 +1,115 @@
+// Parallex banner
+.parallex-banner {
+    overflow: hidden;
+    position: relative;
+    background-image: url('../images/beach.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    @media #{$maxMobile} {
+        height: 130vh;
+    }
+    .parallex-info {
+        background-color: white;
+        width: 600px;
+        padding: 40px;
+        position: absolute;
+        top: 14%;
+        right: 10%;
+        text-align: center;
+        @media #{$maxSmall} {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+        img {
+            width: 70px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+            color: $greyColor;
+            line-height: 1.6;
+        }
+        button {
+            @extend %button;
+        }
+    }
+}
+
+// Our Customer Say
+.our-ctm {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+    .our-ctm-title {
+        
+    }
+    .ctm-image {
+        width: 130px;
+        margin: 20px auto;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .our-ctm-info {
+        width: 50%;
+        margin: auto;
+        q {
+            color: $greyColor;
+            line-height: 1.5;
+        }
+        h5 {
+            margin-top: 10px;
+            color: $blackColor;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// Popup Image
+.popup {
+    @include overlay;
+    background-color: rgba(0,0,0, .7);
+    position: fixed;
+    z-index: 66666;
+    display: none;
+    img {
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #popup_content {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+}
+
+// Our Partners
+.our-partners {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+    .our-partners-title {
+        @extend .mg-bottom;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-evenly;
+        @media #{$maxMobile} {
+            
+        }
+        @extend .container;
+        img {
+            width: 15%;
+        }
+    }
+}

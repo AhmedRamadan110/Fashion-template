@@ -1,0 +1,126 @@
+// Footer Top
+.footer-top {
+    background-color: #333333;
+    .footer-info {
+        padding: 80px 0;
+        @extend .container;
+        display: flex;
+        justify-content: space-evenly;
+        @media #{$maxSmall} {
+            flex-direction: column;
+        }
+        h5 {
+            color: #fff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 15px;
+            position: relative;
+            margin-top: 40px;
+            i {
+                position: absolute;
+                right: 10px;
+                top: 0;
+                cursor: pointer;
+                @media #{$maxSmall} {
+                    display: block;
+                }
+                @media #{$minMedium} {
+                    display: block;
+                    right: -20px;
+                }
+                @media #{$minLarge} {
+                    display: none !important;
+                }
+            }
+        }
+        li {
+            color: #acacac;
+            margin-top: 18px;
+            font-size: 15px;
+            @media #{$minMedium} {
+                display: none;
+            }
+            @media #{$minLarge} {
+                display: block !important;
+            }
+            @media #{$maxSmall} {
+                display: none;
+            }
+            i {
+                font-size: 13px;
+                margin-right: 10px;
+            }
+            a {
+                color: #acacac;
+                &:hover {
+                    color: $blueWhiteColor;
+                }
+            }
+        }
+        .our-newsletter {
+            p {
+                width: 343px;
+                color: #acacac;
+                margin-bottom: 20px;
+            }
+            input {
+                width: 350px;
+                padding: 13px;
+                display: block;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                text-indent: 10px;
+                margin-bottom: 20px;
+                @media #{$maxMobile} {
+                    width: 90%;
+                }
+            }
+            button {
+                @extend %button;
+            }
+            ::placeholder {
+                color: $greyColor;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Footer Bottom
+.footer-btm {
+    background-color: #222222;
+    padding: 40px 0;
+    .copyright {
+        float: $floatLeft;
+        @media #{$maxMobile} {
+            float: none;
+            text-align: center;
+            margin-bottom: 30px;;
+        }
+        h5 {
+            color: white;
+            font-size: 14px;
+        }
+        a {
+            color: $blueWhiteColor;
+        }
+    }
+    .social-media {
+        float: $floatRight;
+        margin-top: -10px;
+        @media #{$maxMobile} {
+            float: none;
+            text-align: center;
+        }
+        i {
+            color: rgba(255, 255, 255, 0.13);
+            font-size: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}

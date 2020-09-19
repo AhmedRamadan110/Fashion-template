@@ -1,0 +1,14 @@
+%button {
+    border: none;
+    color: white;
+    background-color: $blueWhiteColor;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        background-color: #366da1;
+    }
+}
